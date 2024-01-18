@@ -7,17 +7,18 @@ class person1{
         lastname=ln;
         age=a;
     }
- String GetFullName(){
-      return firstname+" "+lastname;
-        }
+    String getfullname(){
+        return firstname+" "+lastname;
+    }
 }
 public class Person {
-    public static void main(String args[]){   
-    person1 a1=new person1("Jhon","Deo",35);
-    person1 a2=new person1("Alice","Smith",25);
-    System.out.println("Person 1:"+a1.GetFullName());
-    System.out.println("Person 2:"+a2.GetFullName());
-    double a3= ((a1.age+a2.age/2));
-    System.out.println("Average Age:"+a3);
+    public static void main(String[] args) {
+       person1 a1=new person1("Jhon","Doe",30);
+       person1 a2=new person1("Alice","Smith",25);
+       System.out.println("Person 1:"+a1.getfullname());
+       System.out.println("Person 2:"+a2.getfullname());
+       double b= (a1.age+a2.age)/2;//
+       System.out.println("Average Age:"+b);
+
 }
 }
