@@ -1,14 +1,14 @@
 class Person1 {
     String firstname;
     String lastname;
-    int age;
-    Person1 (String fname,String lname,int a){
+    double age;
+    Person1 (String fname,String lname,double a){
         firstname=fname;
         lastname=lname;
         age=a;
     }
     String getfullname(){
-    return (firstname+lastname);
+    return (firstname+" "+lastname);
     }
 }
 public class Person{
