@@ -1,24 +1,23 @@
-class Person1 {
+class person1{
     String firstname;
     String lastname;
     double age;
-    Person1 (String fname,String lname,double a){
-        firstname=fname;
-        lastname=lname;
+    person1(String fn,String ln,double a){
+        firstname=fn;
+        lastname=ln;
         age=a;
     }
-    String getfullname(){
-    return (firstname+" "+lastname);
-    }
+ String GetFullName(){
+      return firstname+" "+lastname;
+        }
 }
-public class Person{
-    public static void main(String args[])
-    {
-        Person1 b1=new Person1("Jhon"," Doe",30);
-        Person1 b2=new Person1("Alice","Smith",25);
-        System.out.println("Person1:"+b1.getfullname());
-        System.out.println("Person2:"+b2.getfullname()); 
-        double avg=((b1.age+b2.age)/2);
-        System.out.println("Average Age:"+avg);
-    }
+public class Person {
+    public static void main(String args[]){   
+    person1 a1=new person1("Jhon","Deo",35);
+    person1 a2=new person1("Alice","Smith",25);
+    System.out.println("Person 1:"+a1.GetFullName());
+    System.out.println("Person 2:"+a2.GetFullName());
+    double a3= ((a1.age+a2.age/2));
+    System.out.println("Average Age:"+a3);
+}
 }
